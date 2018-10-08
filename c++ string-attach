@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+//How to attach a string argument with a integer/float/string in a C++ way !!!!!
+//The main idea is using stringstream and connnect them by stream
+//How convinient c++ is to do this fortran-dirty job!!!!
+//If you want to use the method, you need to include <sstream> and <string>
+using namespace std;
+
+int main()
+{
+    int i;
+    ostringstream jstep;
+    for(i=1;i<=20;i++)
+      jstep << i << "step.dat";
+
+    cout << jstep.str() << endl;
+    return 0;
+}
