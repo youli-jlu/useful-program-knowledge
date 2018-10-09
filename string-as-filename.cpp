@@ -18,6 +18,8 @@ int main()
       jstep << i << "step.dat";
 
     ofstream out;
+    //.open(char),while .str() is a string-type data
+    //we use str.c_str() and strcpy() function to accomplish this data-change
     char ch[100];
     string str=jstep.str();
     strcpy(ch,str.c_str());
