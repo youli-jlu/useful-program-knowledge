@@ -19,15 +19,15 @@ int main()
 
     ofstream out;
     //.open(char),while .str() is a string-type data
-    //we use str.c_str() and strcpy() function to accomplish this data-change
-    char ch[100];
-    string str=jstep.str();
-    strcpy(ch,str.c_str());
-//    string str="yestets2";
-//    string str=jstep.str();
-
-   // strcpy(a,jstep.str());
-    out.open(ch);
+    //we can use str.c_str() and strcpy() function to accomplish this data-change
+    //char ch[100];
+    //string str=jstep.str();
+    //strcpy(ch,str.c_str());
+    //out.open(ch);
+    
+    //else way is just using (jstep.str()).c_str() to change datatype!!!!
+    out.open((jstep.str()).c_str());
+    //How convinient c++ is to do this fortran-dirty job!!!!
     out << "you are right" << endl;
     return 0;
 }
